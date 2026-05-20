@@ -36,7 +36,7 @@ def mask_card(card_number):
     Пример: '1234123412341234' -> '1234********1234'
     """
     # //TODO 5
-    return None
+    return card_number[:4] + "*" * 8
 
 
 if __name__ == "__main__":
