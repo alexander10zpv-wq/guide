@@ -4,32 +4,34 @@
 """
 
 # //TODO 1: Создай переменную age (int) со значением 25
-age = None
+age = 25
 
 # //TODO 2: Создай переменную price (float) со значением 19.99
-price = None
+price = 19.99
 
 # //TODO 3: Создай переменную z (complex), равную 3 + 4j
-z = None
+z = 3+4j
 
-#test
+
 
 
 def rectangle_area(width, height):
     """Возвращает площадь прямоугольника."""
     # //TODO 4: Верни произведение width и height
-    return None
+    return width*height
 
 
 def cents_to_dollars(cents):
     """
     Принимает целое число центов (например 1234)
-    и возвращает строку вида "12.34".
-    """
-    # //TODO 5: Раздели cents на доллары и центы и собери строку
-    # Подсказка: dollars = cents // 100, remaining_cents = cents % 100
-    # Результат: f"{dollars}.{remaining_cents:02d}"
-    return None
+и возвращает строку вида "12.34".
+"""
+# //TODO 5: Раздели cents на доллары и центы и собери строку
+# Подсказка: dollars = cents // 100, remaining_cents = cents % 100
+# Результат: f"{dollars}.{remaining_cents:02d}"
+    dollars = cents // 100
+    remaining_cents = cents % 100
+    return f"{dollars}.{remaining_cents:02d}"
 
 
 if __name__ == "__main__":

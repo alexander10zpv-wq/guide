@@ -4,26 +4,27 @@
 """
 
 # //TODO 1: Создай переменные
-is_admin = None
-is_blocked = None
+is_admin = True
+is_blocked = False
 
 
 def can_login(is_active, is_blocked):
     """Вернуть True, если пользователь активен и НЕ заблокирован."""
     # //TODO 2
-    return None
+    return is_active and not is_blocked
 
 
 def is_adult(age):
     """Вернуть True, если age >= 18."""
     # //TODO 3
-    return None
+    return age>= 18
 
 
 def is_empty_name(name):
     """Вернуть True, если name пустая или только пробелы."""
     # //TODO 4
-    return None
+    return name.strip()==""
+
 
 
 if __name__ == "__main__":

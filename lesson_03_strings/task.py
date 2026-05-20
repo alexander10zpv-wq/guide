@@ -7,25 +7,26 @@
 def normalize_email(email):
     """Привести email к нижнему регистру и убрать пробелы по краям."""
     # //TODO 1
-    return None
-
+    return email.strip().lower()
+ 
 
 def greet(name):
     """Вернуть строку: 'Привет, <name>!'"""
     # //TODO 2
-    return None
+    return f"Привет, {name}!"
 
 
 def count_words(text):
     """Вернуть число слов в строке."""
     # //TODO 3
-    return None
+    return len(text.split())
 
 
 def is_palindrome(text):
     """Вернуть True, если text — палиндром (без учёта регистра и пробелов)."""
     # //TODO 4
-    return None
+    clean_text = text.lower().replace(" ", "")
+    return clean_text == clean_text[::-1]
 
 
 def mask_card(card_number):
