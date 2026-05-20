@@ -4,25 +4,32 @@
 """
 
 # //TODO 1: создай список fruits с тремя элементами
-fruits = None
+fruits = ["apple","banana","orange"]
 
 
 def add_item(items, value):
     """Добавить value в конец items и вернуть items."""
     # //TODO 2
-    return None
+    items.append(value)
+    return items
 
 
 def remove_item(items, value):
     """Удалить первое вхождение value. Если нет — вернуть items без изменений."""
     # //TODO 3
-    return None
+       try:
+          items.remove(value)
+       except ValueError:
+        pass
+    return items
+        
 
 
 def sum_positive(numbers):
     """Вернуть сумму положительных элементов списка."""
     # //TODO 4
     return None
+
 
 
 def unique_sorted(items):
