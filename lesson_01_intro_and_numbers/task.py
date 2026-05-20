@@ -12,6 +12,8 @@ price = None
 # //TODO 3: Создай переменную z (complex), равную 3 + 4j
 z = None
 
+#test
+
 
 def rectangle_area(width, height):
     """Возвращает площадь прямоугольника."""
