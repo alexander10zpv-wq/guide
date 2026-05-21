@@ -16,10 +16,9 @@ def add_item(items, value):
 
 def remove_item(items, value):
     """Удалить первое вхождение value. Если нет — вернуть items без изменений."""
-    # //TODO 3
-       try:
-          items.remove(value)
-       except ValueError:
+    try:
+        items.remove(value)
+    except ValueError:
         pass
     return items
         
@@ -27,22 +26,19 @@ def remove_item(items, value):
 
 def sum_positive(numbers):
     """Вернуть сумму положительных элементов списка."""
-    # //TODO 4
-    return None
-
+    return sum(x for x in numbers if x > 0)
 
 
 def unique_sorted(items):
     """Вернуть новый отсортированный список без дублей."""
     # //TODO 5
-    return None
+    return sorted(set(items))
 
 
 def squares_of_evens(n):
     """Вернуть список квадратов чётных чисел в диапазоне [0, n)."""
     # //TODO 6
-    return None
-
+    return [x * x for x in range(n) if x % 2 ==0]
 
 if __name__ == "__main__":
     print("fruits =", fruits)
