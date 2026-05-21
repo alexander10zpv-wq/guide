@@ -4,7 +4,7 @@
 """
 
 # //TODO 1: создай список fruits с тремя элементами
-fruits = ["apple","banana","orange"]
+fruits = ['apple','banana','cherry']
 
 
 def add_item(items, value):
